@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Poppins font - start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Poppins font - end -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="sideBar">
+      <!-- Sidebar top row start -->
+      <div class="box1">
+        <div class="insideBox1">
+          <div class="small">
+            <img
+              height="100%"
+              width="100%"
+              src="https://rainbowit.net/splash/html/inbio/assets/images/logo/logo.png"
+              alt="Profile"
+            />
+          </div>
+        </div>
+        <div class="insideBox1-1" onclick="handleClick()">&#10006;</div>
+      </div>
+      <!-- Sidebar top row end -->
+
+      <div class="sideBarContent">
+        <div>
+          Lorem ipsum dolor sit amet consect adipisicing elit repellendus.
+        </div>
+        <div class="horizontalLine"></div>
+        <ul class="mobileMenuList">
+          <li>VIEW DEMO</li>
+          <li>FEATURE</li>
+          <li>FAQ</li>
+          <li>DOCUMENTATION</li>
+          <li>FRIENDLY SUPPORT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="insideBox1">
+        <div class="small">
+          <img
+            height="100%"
+            width="100%"
+            src="https://rainbowit.net/splash/html/inbio/assets/images/logo/logo.png"
+            alt="Profile"
+          />
+        </div>
+      </div>
+      <div class="insideBox1-1" onclick="handleClick()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <script>
+      function handleClick() {
+        const sideBar = document.querySelector(".sideBar");
+
+        if (getComputedStyle(sideBar).opacity === "0") {
+          sideBar.style.left = 0;
+          sideBar.style.opacity = 1;
+        }
+        if (getComputedStyle(sideBar).opacity !== "0") {
+          sideBar.style.left = -200;
+          sideBar.style.opacity = 0;
+        }
+      }
+    </script>
+  </body>
+</html>

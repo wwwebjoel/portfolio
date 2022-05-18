@@ -1,0 +1,76 @@
+body {
+  position: relative;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+.sideBar {
+  position: absolute;
+  height: 100vh;
+  width: 400px;
+  background-color: #1a1b1f;
+  opacity: 0;
+  top: 0;
+  left: -200;
+  transition: all 0.5s ease-in-out;
+}
+
+.box1 {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.insideBox1 {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insideBox1-1 {
+  height: 100%;
+  width: 100px;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+  cursor: pointer;
+}
+.small {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.small1 {
+  height: 30px;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  border-width: 3px;
+  border-color: green;
+  border-style: solid;
+}
+
+.sideBarContent {
+  width: 85%;
+  margin: auto;
+}
+
+.horizontalLine {
+  background-color: gray;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.mobileMenuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobileMenuList li {
+  padding-bottom: 20px;
+}
