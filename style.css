@@ -32,6 +32,7 @@ body {
   top: 0;
   left: -200;
   transition: all 0.5s ease-in-out;
+  z-index: 40;
 }
 
 .box1 {
