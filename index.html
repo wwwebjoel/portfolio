@@ -109,17 +109,54 @@
     <!-- Three boxes start -->
     <div class="threeBoxesContainer">
       <div class="threeBoxes">
-        <div style="margin-bottom: 30px">Icon</div>
-        <div style="font-size: 150%; margin-bottom: 20px">Fast Performance</div>
-        <div>
-          Optimized for a smaller build size, faster dev compilation and dozens
-          of other improvements.
+        <div class="threeBoxesContent">
+          <div style="padding-bottom: 30px">
+            <img src="images/heartbeat.svg" alt="Heartbeat icon" />
+          </div>
+          <div style="font-size: 150%; padding-bottom: 20px; cursor: pointer">
+            Fast Performance
+          </div>
+          <div>
+            Optimized for a smaller build size, faster dev compilation and
+            dozens of other improvements.
+          </div>
         </div>
       </div>
       <div class="threeBoxes"></div>
       <div class="threeBoxes"></div>
     </div>
     <!-- Three boxes end -->
+
+    <div
+      style="
+        position: relative;
+        background-image: url('https://images.unsplash.com/photo-1653290188582-76e0571d332a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 90%;
+        margin: auto;
+        border-radius: 30px;
+        overflow: hidden;
+      "
+    >
+      <div
+        class="overlay"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <button>Click Here</button>
+      </div>
+    </div>
 
     <script>
       function handleClick() {
@@ -135,6 +172,6 @@
         }
       }
     </script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </body>
 </html>
