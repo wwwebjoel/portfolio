@@ -131,7 +131,7 @@ body {
   height: 100%;
   background-image: linear-gradient(to bottom right, rgba(78, 78, 78, 0), #000);
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
   border-radius: 20px;
   z-index: -1;
 }
